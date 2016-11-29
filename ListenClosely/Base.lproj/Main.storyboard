@@ -25,21 +25,33 @@
                                 <rect key="frame" x="206" y="289" width="88" height="88"/>
                                 <state key="normal" image="play"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rei-dK-C0u" userLabel="Red Button">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rei-dK-C0u" userLabel="Red Button">
                                 <rect key="frame" x="81" y="164" width="165" height="165"/>
                                 <state key="normal" image="red"/>
+                                <connections>
+                                    <action selector="redButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2dF-At-LsN"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BpC-jO-sFE" userLabel="Blue Button">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BpC-jO-sFE" userLabel="Blue Button">
                                 <rect key="frame" x="254" y="337" width="166" height="166"/>
                                 <state key="normal" image="blue"/>
+                                <connections>
+                                    <action selector="blueButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ACq-iD-2lr"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJU-vB-NjC" userLabel="Green Button">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJU-vB-NjC" userLabel="Green Button">
                                 <rect key="frame" x="81" y="337" width="165" height="166"/>
                                 <state key="normal" image="green"/>
+                                <connections>
+                                    <action selector="greenButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qiE-QW-Tny"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08i-K7-fFs" userLabel="Orange Button">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08i-K7-fFs" userLabel="Orange Button">
                                 <rect key="frame" x="254" y="164" width="166" height="165"/>
                                 <state key="normal" image="yellow"/>
+                                <connections>
+                                    <action selector="orangeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="88T-f8-4zl"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level One" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0g-Nn-SB8">
                                 <rect key="frame" x="212" y="46" width="76" height="20.5"/>
@@ -69,7 +81,10 @@
                     <connections>
                         <outlet property="levelLabel" destination="I0g-Nn-SB8" id="uqu-nq-HoQ"/>
                         <outlet property="startPlayButton" destination="tpo-Gk-a1k" id="eIw-76-q4a"/>
-                        <outletCollection property="soundButtons" destination="08i-K7-fFs" collectionClass="NSMutableArray" id="rAR-NK-GAX"/>
+                        <outletCollection property="soundButtons" destination="08i-K7-fFs" collectionClass="NSMutableArray" id="qKC-DO-8DU"/>
+                        <outletCollection property="soundButtons" destination="BpC-jO-sFE" collectionClass="NSMutableArray" id="vll-pB-uCw"/>
+                        <outletCollection property="soundButtons" destination="Rei-dK-C0u" collectionClass="NSMutableArray" id="bDY-QS-YdQ"/>
+                        <outletCollection property="soundButtons" destination="WJU-vB-NjC" collectionClass="NSMutableArray" id="Lkl-1s-wEi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -13,6 +13,11 @@
 		112961161DEDF12B00B9454E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 112961151DEDF12B00B9454E /* Assets.xcassets */; };
 		112961191DEDF12B00B9454E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 112961171DEDF12B00B9454E /* LaunchScreen.storyboard */; };
 		112961211DEDFCAA00B9454E /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112961201DEDFCAA00B9454E /* Music.swift */; };
+		112961261DEDFFE000B9454E /* 1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 112961221DEDFFE000B9454E /* 1.wav */; };
+		112961271DEDFFE000B9454E /* 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 112961231DEDFFE000B9454E /* 2.wav */; };
+		112961281DEDFFE000B9454E /* 3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 112961241DEDFFE000B9454E /* 3.wav */; };
+		112961291DEDFFE000B9454E /* 4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 112961251DEDFFE000B9454E /* 4.wav */; };
+		1129612C1DEE035F00B9454E /* SilverySleds.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 1129612B1DEE02A000B9454E /* SilverySleds.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		112961181DEDF12B00B9454E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1129611A1DEDF12B00B9454E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		112961201DEDFCAA00B9454E /* Music.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		112961221DEDFFE000B9454E /* 1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1.wav; sourceTree = "<group>"; };
+		112961231DEDFFE000B9454E /* 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 2.wav; sourceTree = "<group>"; };
+		112961241DEDFFE000B9454E /* 3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 3.wav; sourceTree = "<group>"; };
+		112961251DEDFFE000B9454E /* 4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 4.wav; sourceTree = "<group>"; };
+		1129612B1DEE02A000B9454E /* SilverySleds.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = SilverySleds.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +73,21 @@
 				112961151DEDF12B00B9454E /* Assets.xcassets */,
 				112961171DEDF12B00B9454E /* LaunchScreen.storyboard */,
 				1129611A1DEDF12B00B9454E /* Info.plist */,
+				1129612A1DEDFFEA00B9454E /* Sounds */,
 			);
 			path = ListenClosely;
+			sourceTree = "<group>";
+		};
+		1129612A1DEDFFEA00B9454E /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				1129612B1DEE02A000B9454E /* SilverySleds.m4a */,
+				112961221DEDFFE000B9454E /* 1.wav */,
+				112961231DEDFFE000B9454E /* 2.wav */,
+				112961241DEDFFE000B9454E /* 3.wav */,
+				112961251DEDFFE000B9454E /* 4.wav */,
+			);
+			name = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,8 +150,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1129612C1DEE035F00B9454E /* SilverySleds.m4a in Resources */,
+				112961281DEDFFE000B9454E /* 3.wav in Resources */,
 				112961191DEDF12B00B9454E /* LaunchScreen.storyboard in Resources */,
 				112961161DEDF12B00B9454E /* Assets.xcassets in Resources */,
+				112961291DEDFFE000B9454E /* 4.wav in Resources */,
+				112961261DEDFFE000B9454E /* 1.wav in Resources */,
+				112961271DEDFFE000B9454E /* 2.wav in Resources */,
 				112961141DEDF12B00B9454E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
