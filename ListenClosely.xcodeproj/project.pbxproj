@@ -96,6 +96,7 @@
 				TargetAttributes = {
 					1129610A1DEDF12A00B9454E = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = TDFXWLD7DJ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -260,6 +261,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TDFXWLD7DJ;
 				INFOPLIST_FILE = ListenClosely/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.electricchance.ListenClosely;
@@ -272,6 +274,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TDFXWLD7DJ;
 				INFOPLIST_FILE = ListenClosely/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.electricchance.ListenClosely;
