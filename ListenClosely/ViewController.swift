@@ -49,6 +49,15 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
 
     }
     
+    @IBAction func playButtonTapped(_ sender: Any) {
+        
+        let randomNumber = Int(arc4random_uniform(4) + 1)
+        music.playlist.append(randomNumber)
+        startPlayButton.isHidden = true
+        playNextItem()
+    }
+    
+    
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         if  music.currentItem <= music.playlist.count - 1 {
             //play next item
@@ -59,7 +68,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         }
     }
     
-    func playNextIte() {
+    func playNextItem() {
         let selectedItem = music.playlist[music.currentItem]
         switch selectedItem {
         case 1:
