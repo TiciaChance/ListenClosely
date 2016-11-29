@@ -78,7 +78,8 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
     }
     
-    
+    //had to make sure the sender was AnyObject and not Any in order to cinnect multiple buttons
+    //this and the initialization of the AVAudioPlayer in the music file was the cause of all my problems 
     @IBAction func soundButtonPressed(sender: AnyObject) {
         
         if readyForUser {
@@ -107,17 +108,12 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
             
         }
         
-        
-        
-        
     }
     
     
     func checkIfCorrect (buttonPressed:Int) {
         if buttonPressed == playlist[numberOfTaps] {
             if numberOfTaps == playlist.count - 1 { // we have arrived at the last item of the playlist
-                
-                
                 
                 let when = DispatchTime.now() + 1
                 DispatchQueue.main.asyncAfter(deadline: when) {
@@ -159,8 +155,6 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         playlist.append(randomNumber)
         
         playNextItem()
-        
-        
         
     }
     
