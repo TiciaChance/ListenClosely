@@ -73,11 +73,33 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         default:
             break;
         }
+        
+        music.currentItem += 1
     }
     
     func highlight(button withTag: Int) {
         
-        
+        switch withTag {
+        case 1:
+            soundButtons[withTag - 1].setImage(#imageLiteral(resourceName: "redPressed"), for: .normal)
+        case 2:
+            soundButtons[withTag - 1].setImage(#imageLiteral(resourceName: "yellowPressed"), for: .normal)
+        case 3:
+            soundButtons[withTag - 1].setImage(#imageLiteral(resourceName: "bluePressed"), for: .normal)
+        case 4:
+            soundButtons[withTag - 1].setImage(#imageLiteral(resourceName: "greenPressed"), for: .normal)
+        default:
+            break;
+
+        }
+    }
+    
+    func resetButtonHightlights() {
+        soundButtons[0].setImage(#imageLiteral(resourceName: "redPressed"), for: .normal)
+        soundButtons[1].setImage(#imageLiteral(resourceName: "yellowPressed"), for: .normal)
+        soundButtons[2].setImage(#imageLiteral(resourceName: "bluePressed"), for: .normal)
+        soundButtons[3].setImage(#imageLiteral(resourceName: "greenPressed"), for: .normal)
+
     }
     
     override func didReceiveMemoryWarning() {
