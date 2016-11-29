@@ -81,12 +81,16 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
         switch withTag {
         case 1:
+            resetButtonHightlights()
             soundButtons[withTag - 1].setImage(#imageLiteral(resourceName: "redPressed"), for: .normal)
         case 2:
+            resetButtonHightlights()
             soundButtons[withTag - 1].setImage(#imageLiteral(resourceName: "yellowPressed"), for: .normal)
         case 3:
+            resetButtonHightlights()
             soundButtons[withTag - 1].setImage(#imageLiteral(resourceName: "bluePressed"), for: .normal)
         case 4:
+            resetButtonHightlights()
             soundButtons[withTag - 1].setImage(#imageLiteral(resourceName: "greenPressed"), for: .normal)
         default:
             break;
