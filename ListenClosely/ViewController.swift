@@ -7,8 +7,16 @@
 //
 
 import UIKit
+import AVFoundation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, AVAudioPlayerDelegate {
+    
+    @IBOutlet weak var startPlayButton: UIButton!
+    @IBOutlet var soundButtons: [UIButton]!
+    @IBOutlet weak var levelLabel: UILabel!
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -66,6 +66,11 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="500" height="667"/>
+                    <connections>
+                        <outlet property="levelLabel" destination="I0g-Nn-SB8" id="uqu-nq-HoQ"/>
+                        <outlet property="startPlayButton" destination="tpo-Gk-a1k" id="eIw-76-q4a"/>
+                        <outletCollection property="soundButtons" destination="08i-K7-fFs" collectionClass="NSMutableArray" id="rAR-NK-GAX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
